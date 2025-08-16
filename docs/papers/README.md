@@ -1,0 +1,11 @@
+# Papers
+
+This folder contains the documentation for the project.
+
+- [Impact evaluation with nonrepeatable outcomes: The case of forest conservation](https://github.com/angelofgdsantos/cow_market_power/tree/main/docs/papers/1-s2.0-S0095069624000457-main-2.pdf): 
+
+    - Abstract:The application of quasiexperimental impact evaluation to remotely sensed measures of deforestation has yielded important evidence detailing the effectiveness of conservation policies. However, researchers have paid insufficient attention to the binary and nonrepeatable structure of most deforestation datasets. Using analytical proofs and simulations, we demonstrate that many commonly employed econometric approaches are biased when applied to binary and nonrepeatable outcomes. The significance, magnitude and even direction of estimated effects from many studies are likely incorrect, threatening to undermine the evidence base that underpins conservation policy adoption and design. To address these concerns, we provide guidance and new strategies for the design of panel econometric models that yield more reliable estimates of the impacts of forest conservation policies.
+ 
+- [Agricultural technology adoption and deforestation: Evidence from a randomized control trial](https://github.com/angelofgdsantos/cow_market_power/blob/main/docs/papers/1-s2.0-S0304387825001518-main-4.pdf)
+
+    - Abstract: We study the effect of the adoption of improved agricultural inputs on deforestation using a randomized control trial in Nigeria which introduced a more efficient and environmentally-friendly nitrogen fertilizer. We combine survey data from the intervention with earth observation data to develop a generalizable method for evaluating the effects of cluster-level interventions on landscape-level outcomes. We find evidence of an intensification response to treatment exposure that reflects significant heterogeneity across land cover. On land with relatively sparse pre-intervention tree cover, treatment exposure increased deforestation while in denser forest areas the intervention reduced deforestation. We find corresponding effects showing treatment exposure increases agricultural productivity. Our results reflect an intensification response to improved agricultural technology that redirects agricultural activity away from forests and towards existing cropland.
