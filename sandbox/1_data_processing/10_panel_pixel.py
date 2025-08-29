@@ -87,5 +87,5 @@ panel["loss"] = panel.apply(loss_indicator, axis=1)
 """
 Part 4: Save output
 """
-panel.to_stata(f"{root}{output}/10_pixel_panel.dta", version=117)
+panel.to_stata(f"{root}{output}/10_pixel_panel.dta", version=117, write_index=False)
 
