@@ -2,7 +2,7 @@
 
 This folder contains the documentation for the project.
 
-- [Impact evaluation with nonrepeatable outcomes: The case of forest conservation](https://github.com/angelofgdsantos/cow_market_power/tree/main/docs/papers/1-s2.0-S0095069624000457-main-2.pdf): 
+- [Impact evaluation with nonrepeatable outcomes: The case of forest conservation](https://github.com/angelofgdsantos/cow_market_power/blob/main/docs/papers/1-s2.0-S0095069624000457-main-2.pdf): 
 
     - Abstract:The application of quasiexperimental impact evaluation to remotely sensed measures of deforestation has yielded important evidence detailing the effectiveness of conservation policies. However, researchers have paid insufficient attention to the binary and nonrepeatable structure of most deforestation datasets. Using analytical proofs and simulations, we demonstrate that many commonly employed econometric approaches are biased when applied to binary and nonrepeatable outcomes. The significance, magnitude and even direction of estimated effects from many studies are likely incorrect, threatening to undermine the evidence base that underpins conservation policy adoption and design. To address these concerns, we provide guidance and new strategies for the design of panel econometric models that yield more reliable estimates of the impacts of forest conservation policies.
  
