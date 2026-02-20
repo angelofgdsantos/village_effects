@@ -136,4 +136,8 @@ households_final = households.merge(village_gamma_params, on='vilid', how='left'
 # Save the updated household dataset
 households_final.to_csv(f'{output_data}11_CFP_HH_forest_gamma_params.csv', index=False)
 
+# Save the village-level parameters separately
+village_gamma_params.to_csv(f'{output_data}11_village_forest_gamma_params.csv', index=False)
+
+
 print("Gamma distribution fitting complete. Parameters saved and merged.")
