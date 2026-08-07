@@ -1,1 +1,84 @@
-data/
+# ==============================================================================
+# .gitignore — Academic Research Project
+# ==============================================================================
+
+# --- DATA (never commit raw/processed data) ---
+02_data/raw/
+02_data/processed/
+*.dta
+*.dta.gz
+
+# --- GEOSPATIAL / RASTER (large files) ---
+*.tif
+*.tiff
+*.shp
+*.dbf
+*.shx
+*.prj
+*.gpkg
+*.geojson
+*.nc
+
+# --- PYTHON DATA ARTIFACTS ---
+*.csv
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+
+# --- LATEX BUILD ARTIFACTS ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.synctex.gz
+*.run.xml
+*-blx.bib
+
+# --- COMPILED PDFS (uncomment to also ignore) ---
+# *.pdf
+
+# --- STATA ---
+*.stswp
+*.stptmp
+
+# --- PYTHON ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- R ---
+.Rproj.user/
+.Rhistory
+.RData
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- CLAUDE CODE (local only, not shared) ---
+.claude/settings.local.json
+.claude/state/
+CLAUDE.local.md
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- QUARTO ---
+.quarto/
+
+# --- REPLICATION STAGING ---
+replication_package_draft/

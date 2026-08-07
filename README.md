@@ -1,21 +1,29 @@
-# Village Project
+# Village Effects of the CFP Program
 
-## Overview
+This paper estimates the causal effect of the Community Forestry Programme (CFP) on village-level deforestation in Zambia, with heterogeneity analysis along governance quality (chiefdom political institutions) and forest dependence (RALS survey) dimensions.
 
+**Author:** Angelo dos Santos
+**Institution:** University of Pennsylvania — Population Studies Center
+**Status:** Working Paper
 
-## Datasets
+---
 
-* [Global Forest Change](https://glad.earthengine.app/view/global-forest-change#bl=off;old=off;dl=1;lon=20;lat=10;zoom=3;) : Forest cover change.
-* [GRID3 ZMB - Settlement Extents v3.0](https://data.grid3.org/search?tags=settlements) : Zambia settlement.
-* [CFP project dataset] : Confidential dataset on CFP project
+## Folder Structure
 
-## Folders structure
+| Folder | Purpose |
+|--------|---------|
+| `01_project_planning/` | Pre-analysis plan, IRB, project notes, quality reports |
+| `02_data/` | Raw and processed data (gitignored) |
+| `03_analysis/` | Working scripts, exploratory figures, working tables |
+| `04_writing/` | Paper drafts, notes, referee responses |
+| `05_submission/` | Submission packages by venue |
+| `06_final_output/` | Publication-ready figures, tables, replication scripts |
+| `04_writing/Paper/` | LaTeX paper source |
+| `04_writing/Slides/` | Beamer presentation slides |
+| `04_writing/Quarto/` | RevealJS slides (rendered from Beamer) |
+| `04_writing/Preambles/` | Shared LaTeX preambles |
 
-* [Sandox](sandbox/): Contains our scripts for data processing, visualization and analysis.
-    * [1_data_processing](sandbox/1_data_processing/): Contains codes for data processing.
-    * [2_visualization](sandbox/2_visualization/): Contains codes for data visualization.
-    * [3_analysis](sandbox/3_analysis/): Contains codes for data scalability.
+## Claude Code Workflow
 
-* [Outputs](outputs) :  Contains outputs files.
-
-* [docs](docs/): Contains documentation files.
+This project uses the [claude-code-my-workflow](https://github.com/pedrohcgs/claude-code-my-workflow) framework.
+See `CLAUDE.md` for project configuration and available commands.

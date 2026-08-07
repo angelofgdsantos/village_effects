@@ -1,0 +1,120 @@
+---
+title: "Project Title"
+subtitle: "Subtitle or Research Phase"
+author:
+  - name: "Angelo dos Santos"
+    affiliations:
+        - name: "University of Pennsylvania"
+          department: "Population Studies Center"
+date: last-modified
+date-format: "MMMM D, YYYY"
+format:
+  revealjs:
+    center: false
+    incremental: false
+    slide-level: 0
+    pdf-separate-fragments: true
+    slide-number: true
+    preview-links: true
+    embed-resources: true
+    theme: [serif, custom.scss]
+    mathjax: true
+    show-slide-number: print
+
+---
+
+# Introduction / Motivation
+
+* **Context**: Brief explanation of the research setting.
+* **Problem**: What is the gap in the literature?
+* **Contribution**: How does this project address that gap?
+
+---
+
+# Literature Review
+
+* **Key Paper 1**: Citation and main finding.
+* **Key Paper 2**: Citation and main finding.
+* **Our Approach**: How we differ or build upon these papers.
+
+---
+
+# Research Questions
+
+1. **Question 1**: Primary research objective.
+2. **Question 2**: Secondary or heterogeneous effect.
+3. **Question 3**: Policy implication or counterfactual.
+
+---
+
+# Data Sources
+
+* **Dataset A**: Description (source, frequency, coverage).
+* **Dataset B**: Description (source, variables used).
+* **Linkage**: How datasets are merged or related.
+
+---
+
+# Empirical Strategy
+
+* **Identification Strategy**: DiD, IV, RDD, etc.
+* **Equation**:
+  $$ Y_{it} = \alpha_i + \gamma_t + \beta D_{it} + \varepsilon_{it} $$
+* **Assumptions**: Key identifying assumptions.
+
+---
+
+# Main Results
+
+* **Finding 1**: Direct effect — magnitude and significance.
+* **Finding 2**: Robustness checks or alternative specifications.
+
+---
+
+# Results Visualization
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Figure A
+![](../06_final_output/figures/placeholder.png)
+*Brief description of Figure A.*
+:::
+
+::: {.column width="50%"}
+### Figure B
+![](../06_final_output/figures/placeholder.png)
+*Brief description of Figure B.*
+:::
+
+:::
+
+---
+
+# Heterogeneity / Extensions
+
+* **Subgroup 1**: Effect for [group] — [magnitude].
+* **Subgroup 2**: Effect for [group] — [magnitude].
+* **Mechanism**: Why does the effect vary?
+
+---
+
+# Policy Implications
+
+* **Implication 1**: What should policymakers do?
+* **Implication 2**: Potential social or economic gains.
+* **Next Steps**: Future research directions.
+
+---
+
+# {.center}
+
+<div style="font-size: 3em; text-align: center; margin-top: 8vh;">
+
+**Thanks!**
+
+<br>
+
+<span style="font-size: 0.5em; color: #555555;">angelo.santos@pennmedicine.upenn.edu</span>
+
+</div>

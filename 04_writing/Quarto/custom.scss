@@ -1,0 +1,253 @@
+// 1. Import Fira Sans and Fira Mono (The Moloch/Metropolis standard)
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Fira+Mono&display=swap');
+
+/*-- scss:defaults --*/
+
+// 2. Update Fonts to Fira Sans
+$font-family-sans-serif:  'Fira Sans', sans-serif !default;
+$font-family-serif:       'Fira Sans', sans-serif !default; // Modern Beamer themes stay sans-serif
+$font-family-monospace:   'Fira Mono', monospace !default;
+
+// Colors 
+$body-bg: #fff !default; 
+$body-color: #555555 !default; 
+$link-color: #508a50 !default; 
+$link-hover-color: #334422 !default; 
+
+// Headings (Using Fira Sans)
+$presentation-heading-font: 'Fira Sans', sans-serif !default; 
+$presentation-heading-color: #334422 !default; // Dark Slate (Moloch Style)
+$heading-font-weight: 400 !default; 
+$heading-line-height: 1.3 !default; 
+
+// Heading Sizes
+$h1-font-size: 3rem !default;
+$h2-font-size: 2rem !default;
+$h3-font-size: 1.5rem !default;
+
+/*-- scss:rules --*/
+
+/* --- THE BEAMER GRADIENT --- */
+.reveal {
+  background: linear-gradient(to bottom, #e3f2e3 0%, #ffffff 15%) !important;
+}
+
+/* --- FORCE TITLE SLIDE MIDDLE --- */
+.reveal .slides section#title-slide {
+  /* This overrides Reveal's default "top: 0" or centered logic */
+  top: 0 !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important; /* Forces vertical middle */
+  align-items: center !important;     /* Forces horizontal center */
+}
+
+/* Ensure authors and date match Fira Sans */
+.quarto-title-author-name {
+  /* 1. Fatness (Weight) */
+  /* Options: 300 (Light), 400 (Regular), 500 (Medium), 600 (Bold) */
+  font-weight: 350 !important; 
+
+  /* 2. Color */
+  /* You can use a hex code like #23373b or a standard name */
+  color: #555555 !important; 
+
+  /* 3. Position & Spacing */
+  margin-top: 0rem !important;    /* Space above the name */
+  margin-bottom: 0.5rem !important; /* Space below the name */
+  text-align: center !important;  /* Horizontal position */
+  
+  /* 4. Font Size */
+  font-size: 1.6rem !important;
+  
+  /* 5. Character Polish */
+  text-transform: uppercase;      /* Optional: Makes it look more "academic" */
+  letter-spacing: 0.1rem;         /* Adds a bit of air between letters */
+
+}
+
+#title-slide p.date {
+  font-size: 1.6rem !important;  /* your desired size */
+  color: #555555 !important;
+  font-weight: 350 !important;
+  font-family: 'Fira Sans', sans-serif !important;
+}
+
+/* Menu button */
+
+.reveal .slide-menu-button,
+.reveal .slide-menu-button .fas.fa-bars {
+  color: #334422 !important;
+  opacity: 5 !important;
+}
+
+/* Optional: If you want to style the "Postdoctoral Researcher" or Institution text */
+.quarto-title-authors .quarto-title-author-affiliation {
+  font-size: 1.1rem !important;
+  font-weight: 300 !important;
+  color: #555555 !important;
+}
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  font-family: 'Fira Sans', sans-serif !important;
+}
+
+#title-slide .title {
+  font-size: 4rem !important; 
+}
+
+/* --- Updated Heading Sizes --- */
+.reveal h1 { 
+  font-size: $h1-font-size !important; 
+  font-family: 'Fira Sans', sans-serif !important;
+  color: $presentation-heading-color;
+  text-align: center; 
+}
+
+.reveal h2 { 
+  font-size: $h2-font-size !important; 
+  font-family: 'Fira Sans', sans-serif !important;
+  color: $presentation-heading-color;
+  text-align: center; 
+}
+
+.reveal h3 { 
+  font-size: $h3-font-size !important; 
+  font-family: 'Fira Sans', sans-serif !important;
+  color: $presentation-heading-color;
+  text-align: center; 
+}
+
+.reveal p, .reveal li {
+  font-family: 'Fira Sans', sans-serif !important;
+  /* Adjusting body text for better readability */
+  font-size: 1.6rem !important; 
+  /* A lighter weight for body text to contrast with headings */
+  font-weight: 300 !important; 
+  /* Improved line spacing and letter spacing for better readability */
+  line-height: 1.4 !important;
+  /* Slightly increased letter spacing for better readability */
+  letter-spacing: 0.01em !important;
+  margin-bottom: 1.2rem !important; 
+}
+
+
+/* --- CONTROL BOLD LETTERS --- */
+.reveal strong, .reveal b {
+  /* Options: 500 (Medium), 600 (Semi-Bold), 700 (Bold) */
+  font-weight: 400 !important; 
+  /* Adjusting body text for better readability */
+  font-size: 1.7rem !important; 
+  /* Improved line spacing and letter spacing for better readability */
+  line-height: 1.4 !important;
+  /* Slightly increased letter spacing for better readability */
+  letter-spacing: 0.01em !important;
+  /*color: #334422 !important;*/ /* Optional: Dark Slate for emphasis */
+  color: #334422 !important;
+}
+
+/* Colors the bullets */
+.reveal li::marker {
+  color: #334422; 
+  font-weight: 600; 
+}
+/* --- SLIDE CONTENT CENTERING (Fixing Indentation) --- */
+.reveal .slides > section:not(.title-slide) {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100%;
+  /* Center the "flex box" itself so content doesn't hug the left edge */
+  align-items: center; 
+}
+
+/* Headings stay perfectly centered and full-width */
+.reveal .slides > section:not(.title-slide) h1,
+.reveal .slides > section:not(.title-slide) h2,
+.reveal .slides > section:not(.title-slide) h3 {
+  width: 100% !important;
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+}
+
+/* This targets the container of your bullets and paragraphs */
+.reveal .slides > section:not(.title-slide) > p, 
+.reveal .slides > section:not(.title-slide) > ul, 
+.reveal .slides > section:not(.title-slide) > ol {
+  text-align: left !important;
+  align-self: flex-start; /* Aligns the start of the list to the left */
+  margin-left: 5% !important; /* Adjust this percentage to move the whole list left/right */
+  width: 95% !important; /* Limits the width so it doesn't span the whole screen */
+}
+
+/* Vertical spacing logic */
+.reveal .slides > section:not(.title-slide) > h1 + *, 
+.reveal .slides > section:not(.title-slide) > h2 + *, 
+.reveal .slides > section:not(.title-slide) > h3 + * {
+  margin-top: auto !important; 
+}
+
+.reveal .slides > section:not(.title-slide) > :last-child {
+  margin-bottom: auto !important;
+}
+
+/* --- ABSOLUTE CENTERING FOR TITLE --- */
+#title-slide .title {
+  font-size: 4rem !important; 
+  border-bottom: 2px solid #334422 !important; 
+  display: inline-block !important;
+  width: 100% !important;       
+  color: #334422 !important; 
+  font-family: 'Fira Sans', sans-serif !important;
+  font-weight: 500 !important;
+  
+  /* POSITIONING FIX */
+  margin-top: 25vh !important;    /* Pushes the start of the title block down to near the middle */
+  margin-bottom: 0.5rem !important; 
+  padding-bottom: 0.5rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* This block forces every container in the title slide to use the full width of the screen */
+#title-slide .quarto-title-authors,
+#title-slide .quarto-title-meta,
+#title-slide .quarto-title-meta-heading, /* Sometimes Quarto adds this hidden heading */
+#title-slide .quarto-title-meta-contents,
+#title-slide .quarto-title-author-name,
+#title-slide .quarto-title-date,
+#title-slide p {
+  display: block !important;
+  width: 100% !important;   /* This is the key to centralizing */
+  text-align: center !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  margin-top: 0.5rem !important; /* Tightens gap even further */
+}
+
+/* --- THE PDF PRINT FIX --- */
+@media print {
+  body {
+    overflow: visible !important;
+  }
+  .reveal .slides {
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .reveal .slides section {
+    display: block !important;
+    page-break-after: always !important; 
+    break-after: page !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
